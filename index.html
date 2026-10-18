@@ -120,19 +120,16 @@
           </div>
 
           <!-- Últimos videos (se actualizan solos). Si no cargan, borra este bloque. -->
-          <div class="embeds">
-            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@dress.to.impress.esp" data-unique-id="dress.to.impress.esp" data-embed-type="creator" style="max-width:780px;min-width:288px;">
-  <section><a target="_blank" href="https://www.tiktok.com/@dress.to.impress.esp?refer=creator_embed">@dress.to.impress.esp</a></section>
-</blockquote>
-            <script async src="https://www.tiktok.com/embed.js"></script>
-          </div>
+         <div class="embeds" id="tt-zona">
+  <button class="btn small" id="tt-boton" type="button">Ver últimos videos</button>
+</div>
         </section>
       </div>
     </div>
 
     <section id="unete" class="join">
       <h2>¿Preparado para entrar?</h2>
-      <p>Únete, elige tu outfit y ven a jugar con nosotras.</p>
+      <p>Únete, elige tu outfit y ven a jugar en Bunny DTI.</p>
       <a class="btn" href="https://discord.com/invite/dties" target="_blank" rel="noopener">Unirme al Discord</a>
       <img class="sticker join-sticker join-sticker-candy" src="img/corazoneesdegalleta.png" alt="" aria-hidden="true">
       <img class="sticker join-sticker join-sticker-cake" src="img/tartadechocolate.PNG" alt="" aria-hidden="true">
@@ -160,6 +157,18 @@
       o.textContent = d.approximate_presence_count.toLocaleString("es");
     })
     .catch(err => console.error("Error del contador:", err));
+</script>
+<script>
+  document.getElementById("tt-boton").addEventListener("click", function () {
+    const zona = document.getElementById("tt-zona");
+    zona.innerHTML =
+      '<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bunny.dti6" data-unique-id="bunny.dti6" data-embed-type="creator" style="max-width:780px;min-width:288px;">' +
+      '<section><a target="_blank" href="https://www.tiktok.com/@bunny.dti6?refer=creator_embed">@bunny.dti6</a></section></blockquote>';
+    const s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.tiktok.com/embed.js";
+    document.body.appendChild(s);
+  });
 </script>
 </body>
 </html>
