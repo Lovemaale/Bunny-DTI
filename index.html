@@ -119,23 +119,6 @@
             </article>
           </div>
 
-          <!-- Últimos videos (se actualizan solos). Si no cargan, borra este bloque. -->
-         <div class="videos">
-  <div class="video">
-    <h3>Cómo unirte al servidor</h3>
-    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@dress.to.impress.esp/video/7445098474619686200" data-video-id="7445098474619686200" style="max-width:605px;min-width:325px;">
-      <section><a target="_blank" href="https://www.tiktok.com/@dress.to.impress.esp/video/7445098474619686200">Ver en TikTok</a></section>
-    </blockquote>
-  </div>
-
-  <div class="video">
-    <h3>Últimos eventos y noticias</h3>
-    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@dress.to.impress.esp/video/7695927703618194706" data-video-id="7695927703618194706" style="max-width:605px;min-width:325px;">
-      <section><a target="_blank" href="https://www.tiktok.com/@dress.to.impress.esp/video/7695927703618194706">Ver en TikTok</a></section>
-    </blockquote>
-  </div>
-</div>
-<script async src="https://www.tiktok.com/embed.js"></script>
     </div>
 
     <section id="unete" class="join">
@@ -168,18 +151,6 @@
       o.textContent = d.approximate_presence_count.toLocaleString("es");
     })
     .catch(err => console.error("Error del contador:", err));
-</script>
-<script>
-  document.getElementById("tt-boton").addEventListener("click", function () {
-    const zona = document.getElementById("tt-zona");
-    zona.innerHTML =
-      '<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bunny.dti6" data-unique-id="bunny.dti6" data-embed-type="creator" style="max-width:780px;min-width:288px;">' +
-      '<section><a target="_blank" href="https://www.tiktok.com/@bunny.dti6?refer=creator_embed">@bunny.dti6</a></section></blockquote>';
-    const s = document.createElement("script");
-    s.async = true;
-    s.src = "https://www.tiktok.com/embed.js";
-    document.body.appendChild(s);
-  });
 </script>
 </body>
 </html>
