@@ -565,3 +565,14 @@ footer img{
   html{scroll-behavior:auto}
   .btn,.nav nav a{transition:none}
 }
+/* VIDEOS DE TIKTOK */
+.videos{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(325px,1fr));
+  gap:1.5rem;
+  margin-top:2rem;
+  justify-items:center;
+}
+.video{width:100%;max-width:605px;text-align:center}
+.video h3{font-size:1.4rem;margin-bottom:.6rem;color:var(--hot)}
+.video .tiktok-embed{margin:0 auto}
